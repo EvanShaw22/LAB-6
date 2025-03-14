@@ -10,4 +10,24 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'munster',
+    loadComponent: () => import('./munster/munster.page').then( m => m.MunsterPage)
+  },
+  {
+    path: 'ulster',
+    loadComponent: () => import('./ulster/ulster.page').then( m => m.UlsterPage)
+  },
+  {
+    path: 'leinster',
+    loadComponent: () => import('./leinster/leinster.page').then( m => m.LeinsterPage)
+  },
+  {
+    path: 'connacht',
+    loadComponent: () => import('./connacht/connacht.page').then( m => m.ConnachtPage)
+  },
+  {
+    path: 'leinstercounties',
+    loadComponent: () => import('./leinstercounties/leinstercounties.page').then( m => m.LeinstercountiesPage)
+  },
 ];
